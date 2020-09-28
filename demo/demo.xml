@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+
+          <record id="employee0" model="checkin.employee">
+            <field name="realName">Frank</field>
+            <field name="checkedIn">True</field>
+          </record>
+
+          <record id="day0" model="checkin.attendance">
+            <field checkin="name">10:00:00</field>
+          </record>
+<!--
+          <record id="object2" model="checkin.checkin">
+            <field name="name">Object 2</field>
+            <field name="value">20</field>
+          </record>
+
+          <record id="object3" model="checkin.checkin">
+            <field name="name">Object 3</field>
+            <field name="value">30</field>
+          </record>
+
+          <record id="object4" model="checkin.checkin">
+            <field name="name">Object 4</field>
+            <field name="value">40</field>
+          </record>
+-->
+    </data>
+</odoo>

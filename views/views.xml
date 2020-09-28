@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="checkin.list">
+      <field name="name">checkin list</field>
+      <field name="model">checkin.checkin</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="checkin.action_window">
+      <field name="name">checkin window</field>
+      <field name="res_model">checkin.checkin</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="checkin.action_server">
+      <field name="name">checkin server</field>
+      <field name="model_id" ref="model_checkin_checkin"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="checkin" id="checkin.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="checkin.menu_1" parent="checkin.menu_root"/>
+    <menuitem name="Menu 2" id="checkin.menu_2" parent="checkin.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="checkin.menu_1_list" parent="checkin.menu_1"
+              action="checkin.action_window"/>
+    <menuitem name="Server to list" id="checkin" parent="checkin.menu_2"
+              action="checkin.action_server"/>
+-->
+  </data>
+</odoo>
