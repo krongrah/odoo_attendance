@@ -23,7 +23,7 @@
         </record>
 
 
-    <record id="view_empoyee_form" model="ir.ui.view">
+    <record id="view_employee_form" model="ir.ui.view">
             <field name="name">checkin.employee.tree</field>
             <field name="model">checkin.employee</field>
             <field name="priority" eval="8" />
