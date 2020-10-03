@@ -5,3 +5,4 @@ class Employee(models.Model):
 
     realName = fields.Char(required=True, string="name")
     checkedIn = fields.Boolean()
+    perm_read = fields.Boolean(string='Read Access')
